@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Frame Setting</title>
-</head>
-<frameset rows="10%,90%" frameborder="no" scrolling="no">
-     <frame src="Top.html" frameborder = "no" scrolling="no" noresize/>
-     <frameset cols="325px,*" >
-         <frame src="Bottom_Left.html" frameborder = "no" scrolling="no" noresize/>
-         <frame src="Bottom_Right.html" frameborder = "no"scrolling="no"  noresize/>
-</frameset>
-</frameset><noframes></noframes>
 
+
+
+<body>
+    <section class="layout float">
+        <style>
+            .layout.float .left-right-center .left {
+                float: left;
+                width: 300px;
+                background-color: blue
+            }
+ 
+            .layout.float .left-right-center .right {
+                float: right;
+                width: 300px;
+                background-color: red;
+            }
+ 
+            .layout.float .left-right-center .center {
+                overflow: auto;
+            }
+            .layout.float .left-right-center::after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+        </style>
+        <article class="left-right-center">
+            <div class="left"></div>
+            <div class="right"></div>
+ 
+            <div class="center">
+                <h1>浮动解决方案：</h1>
+                <p>中间宽度小会跑到下边去 用bfc</p>
+            </div>
+        </article>
+    </section>
+     
 <body>
 </body>
 </html>
