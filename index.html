@@ -1,39 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-<body>
-    <section class="layout float">
-        <style>
-            .layout.float .left-right-center .left {
-                float: left;
-                width: 300px;
-                background-color: blue
-            }
- 
-            .layout.float .left-right-center .right {
-                float: right;
-                width: 300px;
-                background-color: red;
-            }
- 
-            .layout.float .left-right-center .center {
-                overflow: auto;
-            }
-            .layout.float .left-right-center::after{
-                content: '';
-                display: block;
-                clear: both;
-            }
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style type="text/css">
+             *{margin:0px;padding:0px;}
+             #left{width: 200px;height: 200px;float: left;background-color: pink;}
+             #right{width: 200px;height: 200px;float: right;background-color: blue;}
+             #middle{height: 300px;}
         </style>
-        <article class="left-right-center">
-            <div class="left"></div>
-            <div class="right"></div>
-            <div class="center">
-                <h1>浮动解决方案：</h1>
-                <p>中间宽度小会跑到下边去 用bfc</p>
-            </div>
-        </article>
-    </section>
-<body>
-</body>
+    </head>
+    <body>
+        <div id="content">
+            <div id="left">我是左侧内容我是左侧内容我是左侧内容我是左侧内容我是左侧内容</div>
+            <div id="right">我是右侧内容我是右侧内容我是右侧内容我是右侧内容我是右侧内容我是右侧内容</div>
+            <div id="middle">我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容</div>
+        </div>
+    </body>
 </html>
