@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <style type="text/css">
-             *{margin:0px;padding:0px;}
-             #left{width: 200px;height: 200px;float: left;background-color: pink;}
-             #right{width: 200px;height: 200px;float: right;background-color: blue;}
-             #middle{height: 300px;}
-        </style>
-    </head>
-    <body>
-        <div id="content">
-            <div id="left">我是左侧内容我是左侧内容我是左侧内容我是左侧内容我是左侧内容</div>
-            <div id="right">我是右侧内容我是右侧内容我是右侧内容我是右侧内容我是右侧内容我是右侧内容</div>
-            <div id="middle">我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容我是中间内容</div>
-        </div>
-    </body>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Frame Setting</title>
+</head>
+<frameset rows="10%,90%" frameborder="no" scrolling="no">
+     <frame src="Top.html" frameborder = "no" scrolling="no" noresize/>
+     <frameset cols="325px,*" >
+         <frame src="Bottom_Left.html" frameborder = "no" scrolling="no" noresize/>
+         <frame src="Bottom_Right.html" frameborder = "no"scrolling="no"  noresize/>
+</frameset>
+</frameset><noframes></noframes>
+
+<body>
+</body>
 </html>
